@@ -55,8 +55,9 @@
         coracao.innerHTML = "❤️";
         coracao.style.position = "fixed";
         coracao.style.left = Math.random() * 100 + "vw";
-        coracao.style.top = "-10px";
-        coracao.style.fontSize = "cair 4s linear";
+        coracao.style.top = "0px";
+        coracao.style.fontSize = Math.random() * 20 + 20 + "px";
+        coracao.style.animation = "cair 4s linear";
         document.body.appendChild(coracao);
 
         setTimeout(() => {
@@ -69,10 +70,12 @@
 
 <style>
 @keyframes cair {
+  from {
+    transform: translateY(0);
+  }
   to {
     transform: translateY(100vh);
   }
-
 }
 </style>
 
