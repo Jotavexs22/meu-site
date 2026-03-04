@@ -17,7 +17,7 @@
 
         p {
           font-size: 20px;
-          color:333;
+          color:#333;
         }
 
         button {
@@ -51,20 +51,20 @@
       }
 
       function criarcoracao() {
-        const coracao = document.createelement("div");
-        coracao.innerhtml = "❤️";
+        const coracao = document.createElement("div");
+        coracao.innerHTML = "❤️";
         coracao.style.position = "fixed";
-        coracao.style.left = math.random() * 100 + "vw";
-        coracaostyle.top = "-10px";
-        coracao.style.fontsize = "cair 4s linear";
-        document.body.appendchild(coracao);
+        coracao.style.left = Math.random() * 100 + "vw";
+        coracao.style.top = "-10px";
+        coracao.style.fontSize = "cair 4s linear";
+        document.body.appendChild(coracao);
 
-        settimeout(() => {
+        setTimeout(() => {
           coracao.remove();
       }, 4000);
     }
 
-    setinterval(criarcoracao, 300);
+    setInterval(criarcoracao, 300);
       </script>
 
 <style>
