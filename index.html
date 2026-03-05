@@ -98,12 +98,12 @@
       }
 
       function fugir() {
-        const botao = document.gerElementById("nao");
+        const botao = document.getElementById("nao");
         const largura = window.innerWidth - 100;
         const altura = window.innerHeight - 50;
 
-        const x = Math. random() * largura;
-        const y = Math. random() * altura;
+        const x = Math.random() * largura;
+        const y = Math.random() * altura;
 
         botao.style.position = "absolute";
         botao.style.left = x + "px";
